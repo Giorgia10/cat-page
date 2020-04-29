@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 8px 20px -1px rgba(0, 0, 0, 0.49);
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+
+.slider {
+  width: 800px;
+  height: 600px;
+  padding: 30px;
+  -webkit-box-shadow: 3px 4px 98px 16px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 3px 4px 98px 16px rgba(0, 0, 0, 0.29);
+  box-shadow: 3px 4px 98px 16px rgba(0, 0, 0, 0.29);
+  border-radius: 8px;
+}
+
+.preview {
+  width: 100%;
+  height: 70%;
+}
+
+.thumbnail-container {
+  width: 100%;
+  height: 30%;
+  padding-top: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+figure {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  cursor: pointer;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: pink;
+  border-radius: 10px;
+}
